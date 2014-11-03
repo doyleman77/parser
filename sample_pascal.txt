@@ -1,9 +1,4 @@
-program abc
-integer a,b,c
-real x
-begin
-	b=6
-	a=b+-4
-	x=-563.0e002
-end
-end
+program main
+int x = 123
+float y = 12.3
+int z = 5*4

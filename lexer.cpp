@@ -95,7 +95,7 @@ Token Lexer::get_token()
 					case 2: // INT
 						current_state = previous_state = 0;
 						cout << "INT:\t" << token << endl;
-						new_token.token_type = 1;
+						new_token.token_type = "01";
 						new_token.token_value = token;
 						return new_token;
 						break;
@@ -103,12 +103,12 @@ Token Lexer::get_token()
 						current_state = previous_state = 0;
 						cout << "SPEC:\t" << token << endl;
 
-						if (token == "+") new_token.token_type = 9;
-						else if (token == "-") new_token.token_type = 10;
-						else if (token == "*") new_token.token_type = 11;
-						else if (token == "/") new_token.token_type = 12;
-						else if (token == "(") new_token.token_type = 13;
-						else if(token == ")") new_token.token_type = 14;
+						if (token == "+") new_token.token_type = "09";
+						else if (token == "-") new_token.token_type = "10";
+						else if (token == "*") new_token.token_type = "11";
+						else if (token == "/") new_token.token_type = "12";
+						else if (token == "(") new_token.token_type = "13";
+						else if(token == ")") new_token.token_type = "14";
 						
 						//new_token.token_type = 3;
 						new_token.token_value = token;
@@ -117,14 +117,14 @@ Token Lexer::get_token()
 					case 5: // REAL
 						current_state = previous_state = 0;
 						cout << "REAL:\t" << token << endl;
-						new_token.token_type = 2;
+						new_token.token_type = "02";
 						new_token.token_value = token;
 						return new_token;
 						break;
 					case 10: // REAL
 						current_state = previous_state = 0;
 						cout << "REAL:\t" << token << endl;
-						new_token.token_type = 2;
+						new_token.token_type = "02";
 						new_token.token_value = token;
 						return new_token;
 						break;
