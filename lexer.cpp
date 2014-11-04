@@ -76,7 +76,7 @@ Token Lexer::get_token()
 				if (current_state == 55 || col == line.size())
 				{
 
-					Token new_token("",0);
+					Token new_token("","");
 					switch (previous_state)
 					{
 					case 0: //NOTHING
@@ -139,7 +139,7 @@ Token Lexer::get_token()
 					cout << "Error with token <<" << token
 						<< ">>" << "at line: " << line_number << ", column: " << col+1
 						<< "." << endl;
-					Token dead("$", -1);
+					Token dead("$", "15");
 					return dead;
 				}
 				else
@@ -151,6 +151,6 @@ Token Lexer::get_token()
 		line_number++;
 		col = 0;
 	//fin.close();
-	Token new_token("$", 15);
+	Token new_token("$", "15");
 	return new_token;
 };

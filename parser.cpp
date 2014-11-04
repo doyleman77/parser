@@ -1,6 +1,9 @@
 #include <sstream>
+#include <iostream>
 
 #include "parser.hpp"
+
+using namespace std;
 
 Parser::Parser()
 {
@@ -62,6 +65,12 @@ Parser::Parser()
 				token_productions.push(token_to_push);
 				done = true;
 				continue;
+			}
+			//WOP WOP. SHOULD BE SUCCESSFUL
+			else if (token_placement_type == "a")
+			{
+				cout << "Success!" << endl;
+				return;
 			}
 			else if (token_placement_type == "<") //place with a reduction token
 			{
