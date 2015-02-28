@@ -1,0 +1,48 @@
+program HelloWorld();
+
+var global, global2, global3 : integer;
+
+var arr : array[1..5, 3..7, 9..15] of boolean;
+
+function abs(num : integer) : integer;
+var temp : integer;
+begin
+    if num < 0 then
+        abs:= num*-1
+    else
+       abs:=num;
+end;
+
+procedure test(var p1:integer; p2,p3:integer);
+var localint : integer;
+var global : integer;
+begin
+    global:=0;
+    localint:=0;
+    p1:=p2 + p3;
+    p2 := localint;
+    p3 := localint;
+end;
+
+procedure recursion(count : integer);
+begin
+    if count < 10 then
+    begin
+        global:=count;
+    end;
+end;
+
+var x,y:integer;
+var z:integer;
+    q,w:integer;
+
+begin
+  z:=-1;
+  w:= -100;
+  q:=-200;
+  x:=5;
+  begin
+    begin
+    end
+  end;
+end.
