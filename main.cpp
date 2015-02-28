@@ -1,22 +1,16 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <sstream>
-#include <fstream>
-
 #include "lexer.hpp"
-#include "parser.hpp"
+//#include "parser.hpp"
+#include "recursive_parser.hpp"
 
 using namespace std;
 
 
 
-
-
 int main()
 {
-	Parser parser;
-
+	Recursive_Parser parser;
+	parser.run();
 
 	cin.get();
 	return 0;

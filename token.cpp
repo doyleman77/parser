@@ -2,6 +2,10 @@
 #include <string>
 
 using namespace std;
+Token::Token()
+{
+
+}
 
 Token::Token(string const t_value, string const t_type)
 {
